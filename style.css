@@ -124,11 +124,36 @@ color: var(--black-main);
     }
 }
 
+/* nav */
+.mode {
+    position: absolute;
+    display: block;
+    z-index: 9999;
+
+    top: 100px;
+    left: 20px;
+
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    color: black;
+
+    cursor: pointer;
+}
+
+.mode:hover {
+    background-color: rgba(0, 0, 0, 0.808);
+    color: white;
+}
+
 /* emoji rain */
 
 .emojis {
     position: absolute;
-    display: block;
+    display: none;
 
     width: 100vw;
     height: 100vh;
@@ -188,7 +213,7 @@ color: var(--black-main);
 .emoji {
     position: fixed;
     bottom: -10%;
-    z-index: 99999;
+    z-index: 999;
     
     -webkit-user-select: none;
     -moz-user-select: none;
